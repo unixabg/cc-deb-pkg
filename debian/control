@@ -1,0 +1,41 @@
+Source: google-cloud-print-connector
+Section: net
+Priority: extra
+Maintainer: Jacob Marble <jacobmarble@google.com>
+Uploaders: Chuan-kai Lin <cklin@debian.org>,
+           Debian Printing Team <debian-printing@lists.debian.org>,
+           Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-go,
+               golang-github-codegangsta-cli-dev,
+               golang-golang-x-oauth2-dev,
+               golang-launchpad-go-xdg-v0-dev | golang-go-xdg-dev,
+               libcups2-dev,
+               libsnmp-dev,
+               libavahi-client-dev,
+               libavahi-common-dev
+Standards-Version: 3.9.6
+Homepage: https://github.com/google/cups-connector
+Vcs-Browser: https://github.com/jacobmarble/cc-deb-pkg
+Vcs-Git: https://github.com/jacobmarble/cc-deb-pkg
+XS-Go-Import-Path: github.com/google/cups-connector
+
+Package: google-cloud-print-connector
+Architecture: any
+Built-Using: ${misc:Built-Using}
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libcups2,
+         libavahi-client3,
+         libavahi-common3,
+         libsnmp30
+Recommends: cups,
+            avahi-daemon
+Description: Google Cloud Print CUPS Connector
+ Share CUPS printers with ChromeOS and Android devices, via Google Cloud Print.
+ Share hundreds of printers on a powerful server, or two printers on a
+ Raspberry Pi.
+ .
+ Lots of help can be found in the wiki
+ (https://github.com/google/cups-connector/wiki).

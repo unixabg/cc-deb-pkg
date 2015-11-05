@@ -1,0 +1,5 @@
+google-cloud-print-connector (0.0~git20151105.24.1902938-1) unstable; urgency=medium
+
+  * Initial release (Closes: #803413)
+
+ -- Jacob Marble <jacobmarble@google.com>  Thu, 05 Nov 2015 10:13:24 -0800
