@@ -1,3 +1,9 @@
+google-cloud-print-connector (0.0~git20151105.24.1902938-2) unstable; urgency=medium
+
+  * Remove unused, non-existent source package dependency.
+
+ -- Jacob Marble <jacobmarble@google.com>  Fri, 18 Dec 2015 14:30:03 -0800
+
 google-cloud-print-connector (0.0~git20151105.24.1902938-1) unstable; urgency=medium
 
   * Initial release (Closes: #803413)
